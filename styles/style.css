@@ -187,14 +187,17 @@ input::placeholder {
         margin: auto;
     }
 
-    .texto__insertado {
-        align-items: center;
-            }
-
-
+    
     }
 
     @media (max-width: 850px) {
+
+    .texto__insertado {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        }
+
         .presentacion_botones {
             justify-content: center;
             flex-direction: column;
