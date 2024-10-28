@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <img src="./assets/logo.png" alt="cara de hernan sin fondo" width="400px">
+</header>
+  
+<main class="presentacion">
+    <section class="presentacion_contenido">
+        <div id="texto_insertado">
+            <input class="texto__insertado" id="input" placeholder="Ingrese el texto aquí" rows="200" cols="800" size="30">
+        </div>
+          
+        <a class="informacion">
+            <img src="./assets/Group.png">
+            Solo letras minúsculas y sin acentos 
+        </a>
+
+        <div class="presentacion_botones"> 
+            <button class="presentacion_boton" onclick="encriptar()">Encriptar</button>
+            <button class="presentacion_boton" onclick="desencriptar()">Desencriptar</button>
+        </div>
+    </section>
+
+    <div class="texto__mostrado" id="texto_mostrado">
+       
+      <div class="output" id="output" > </div>
+        
+        <div id="myDIV">
+            <img class="presentacion_imagen" src="./assets/Muñeco.png" alt="">
+            <p class="presentacion_titulo_mensaje"> Ningún mensaje fue encontrado</p>
+            <p class="presentacion_mensaje"> Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <button class="presentacion_boton_copiar" id="copyButton" onclick="copiarTexto()" style="display: none;"> Copiar </button>
+    </div>
+</main>
+
+<script src="encriptador.js"></script>
+
+<footer class="footer">
+    <p> | Desarrollado por Hernan Henao 2024 | </p>
+    <a href="https://xhernanhenaox.github.io/hhweb/" target="_blank">
+       <img src="./assets/profile.jpeg" width="50px" alt="Perfil de Hernan Henao"> 
+    </a>
+ </footer>
+ 
+</body>
+</html>

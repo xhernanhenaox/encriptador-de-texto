@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-primario: #F3F5FC;
+    --color-secundario: #0A3871;
+    --color-terciario: #ffffff;
+    --fuente-inter: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    font-family: var(--fuente-inter);
+    
+}
+
+.header {
+    background-color: #3D1A5B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.presentacion {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 5% 3% 3%;
+    gap: 40px;
+    font-family: var(--fuente-inter);
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: start;
+}
+
+.presentacion_contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%; 
+}
+
+.texto__insertado {
+    font-family: var(--fuente-inter);
+    color: var(--color-secundario);
+    padding: 10%;
+    border: none;
+    outline: none;
+    background-color: var(--color-primario);
+    font-size: 32px;
+}
+
+input::placeholder {
+    font-family: var(--fuente-inter);
+    font-size: 32px;
+    color: var(--color-secundario);
+}
+
+.informacion {
+    font-size: 14px;
+    padding: 10%;
+}
+
+.presentacion_botones {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+}
+
+.presentacion_boton {
+    width: 40%;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 24px;
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+    text-decoration: none;
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+    justify-content: center;
+}
+
+.presentacion_boton:hover {
+    background-color: #D8DFE8;
+}
+
+.presentacion_boton:active {
+    background-color: #D8DFE8;
+}
+
+.texto__mostrado {
+    background-color: var(--color-terciario);
+    border-radius: 32px;
+    width: 400px;
+    height: 600px;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    margin: auto;
+}
+
+.output {
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+    padding: 10px;
+}
+
+.presentacion_imagen {
+    width: 90%;
+}
+
+.presentacion_titulo_mensaje {
+    font-family: var(--fuente-inter);
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+}
+
+.presentacion_mensaje {
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+}
+
+.presentacion_boton_copiar {
+    width: 150px;
+    height: 40px;
+    padding: 0px 20px;
+    border-radius: 24px;
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+    color: var(--color-secundario);
+    background-color: var(--color-terciario);
+    text-align: center;
+    justify-content: center;
+}
+
+.footer {
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+    padding: 10px;
+    background-color: #160100;
+    color:white;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+
+@media (max-width: 1000px) {
+    .presentacion {
+        flex-direction: column;
+        padding: 5px;
+        display: flex;
+        width: auto;
+        align-items: center;
+        text-align: center;
+        padding: 5% 5% 5% 5%;
+
+    }
+
+    .presentacion_contenido {
+        width: auto;
+        padding: 25px 5px 5px 5px;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .texto__mostrado {
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        display: grid;
+        margin: auto;
+    }
+
+    .texto__insertado {
+        align-items: center;
+            }
+
+
+    }
+
+    @media (max-width: 850px) {
+        .presentacion_botones {
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            padding: 1%;
+            gap: 20px; 
+        }
+    }
+    
+
+
+
+
+  
